@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Caveat:wght@400;700&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Awesome Font -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- Main Syle -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="container">
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header__layout"></div>
+        <div class="header__hamburger">
+            <div class="header__hamburger--line"></div>
+        </div>
+
+        <nav class="header__nav">
+            <div class="header__nav--logo">
+                <i class="fas fa-clipboard-list"></i>
+                <h3 class="header__nav--logo__title">Shopping List</h3>
+            </div>
+            <ul>
+                <a href="#" class="header__nav--link active" data-text="Shoping List">
+                    Shoping List
+                </a>
+                <a href="todo.html" class="header__nav--link" data-text="Todo List">
+                    Todo List
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Shopping List Section -->
+    <section class="shopping-list">
+
+        <div class="shopping-list__form">
+            <div class="shopping-list__form--field">
+                <label for="list-item">New product:</label>
+                <input type="text" id="list-item">
+                <button type="submit" id="addItemBtn">Add Task</button>
+            </div>
+        </div>
+        
+        <div class="shopping-list__content">
+            <h2 class="shopping-list__content--title">Your List</h2>
+            <ul class="shopping-list__content--items"></ul>
+        </div>
+    </section>
+
+    <script src="js/nav.js"></script>
+    <script src="js/shoppingList.js"></script>
+
+</body>
+
+</html>
